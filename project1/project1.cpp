@@ -19,21 +19,21 @@ typedef struct ballList
 	struct ballList * next;
 	Ball ball;
 }BallList;
-void insert(Ball ball);						//插入气球
-double distance(Ball b1, Ball b2);          //判断气球之间的距离
-double abs(double num);					    //取绝对值
+void insert(Ball ball);						
+double distance(Ball b1, Ball b2);         
+double abs(double num);					   
 int judge(Ball b);							//判断新加入的气球是否符合规则
 void putBall();								//改变气球的初始位置，求的满足条件的气球
 BallList *head = NULL;
-double step = 0.01;							//改变气球位置的最小单位
-int num = 0;                                //放置气球的个数
+double step = 0.01;							
+int num = 0;                                
 double sumr = 0;							//用来记录r^2之和
 int main()
 {
 	int n, pointNum, i;
     printf("project1\n/*In a box bounded by [-1, 1], given m balloons(they cannot overlap) with variable radio r and position mu, find the optimal value of r and mu which maximize sum r ^ 2*/\n请输入空间内所要放置的气球数量: ");
 	scanf_s("%d", &n);
-	printf("\n球编号\t x坐标\t y坐标\t 半径\t 球r^2之和\n");
+	printf("\n球编号\t   x坐标\t   y坐标\t   半径\t      球r^2之和\n");
 	for (i = 0; i < n; i++)
 	{
 		putBall();
