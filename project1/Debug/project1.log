@@ -1,0 +1,4 @@
+﻿  project1.cpp
+g:\shangying\学习\project1\project1\project1.cpp(33): warning C4101: 'pointNum': unreferenced local variable
+  project1.vcxproj -> G:\shangying\学习\project1\Debug\project1.exe
+  project1.vcxproj -> G:\shangying\学习\project1\Debug\project1.pdb (Full PDB)
